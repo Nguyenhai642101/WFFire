@@ -1,0 +1,57 @@
+int redLed = 4;
+int greenLed = 11;
+int buzzer = 10;
+int smokeA0 = A5;
+String canhbao;
+String statustb;
+
+
+void setup() {
+  pinMode(redLed, OUTPUT);
+  pinMode(greenLed, OUTPUT);
+  pinMode(buzzer, OUTPUT);
+  pinMode(smokeA0, INPUT);
+  Serial.begin(9600);
+}
+void loop(){
+  double ppm;
+  float x;
+  int rk;
+  int r0=1.7;
+  String tb;
+  float analogSensor= analogRead(smokeA0);
+  rk=(1023-analogSensor)/analogSensor;
+  x=(2.9258-log(rk/r0))/0.4576;
+  ppm=exp(x);
+ if(Serial.available()){
+ tb =Serial.readString();
+  if(tb=="1"){
+     digitalWrite(greenLed,HIGH);
+    statustb="1";
+   }
+   if(tb=="0"){
+     digitalWrite(greenLed,LOW);
+     statustb="0";
+ }}
+    if(ppm<=30){
+    canhbao="MOI THU DEU ON";
+    digitalWrite(redLed,LOW);
+    noTone(buzzer);
+    }
+    else{
+    canhbao="CANH BAO!!";
+    digitalWrite(redLed,HIGH);
+    tone(buzzer,1000,200);
+    
+    }
+  
+  
+    Serial.print(statustb);
+    Serial.print("|");
+    Serial.print(ppm);
+    Serial.print("|");
+    Serial.println(canhbao);
+    delay(1000);
+ 
+ 
+ }

@@ -1,0 +1,6 @@
+C:\Users\ASUS\source\repos\Projectdone\Projectdone\Debug\Projectdone.vcxproj.AssemblyReference.cache
+C:\Users\ASUS\source\repos\Projectdone\Projectdone\Debug\Projectdone.MyForm.resources
+C:\Users\ASUS\source\repos\Projectdone\Projectdone\Debug\Projectdone.vcxproj.GenerateResource.cache
+C:\Users\Nguyen Hai\Downloads\Thư mục không có tiêu đề-20220108T140504Z-001\Thư mục không có tiêu đề\Projectdone\Projectdone\Debug\Projectdone.vcxproj.AssemblyReference.cache
+C:\Users\Nguyen Hai\Downloads\Thư mục không có tiêu đề-20220108T140504Z-001\Thư mục không có tiêu đề\Projectdone\Projectdone\Debug\Projectdone.MyForm.resources
+C:\Users\Nguyen Hai\Downloads\Thư mục không có tiêu đề-20220108T140504Z-001\Thư mục không có tiêu đề\Projectdone\Projectdone\Debug\Projectdone.vcxproj.GenerateResource.cache
